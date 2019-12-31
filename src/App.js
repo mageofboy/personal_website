@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faCheckSquare, faFile} from '@fortawesome/free-solid-svg-icons';
+import { fab} from '@fortawesome/free-brands-svg-icons';
+import Home from './Home';
+import About from './About';
+import Education from './Education';
+import Experience from './Experience';
+import MenuButton from './MenuButton';
+import Menu from './Menu';
+library.add(faEnvelope, faCheckSquare, fab, faFile);
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    menuOpen: false
+  };
+  menuClickHandler = () => {
+    this.setState((prevState) => {
+      return {menuOpen: !prevState.menuOpen};
+    });
+  };
+  render () {
+    return (
+      <div className="App">
+        <MenuButton show={this.state.menuOpen} click={this.menuClickHandler}/>
+        <Router>
+          <div>
+            <Menu  show={this.state.menuOpen } click={this.menuClickHandler}/>
+            <Switch>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/education">
+                <Education />
+              </Route>
+              <Route path="/experience">
+                <Experience/>
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -1,38 +1,210 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  width: 100%;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+.App-content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  background: rgb(33,36,50);
+}
+.body-text {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.wrapper-header {
+  width: 50%;
+  color: white;
+}
+.wrapper-about {
+  padding: 4rem;
+  color: white;
+}
+.wrapper-education {
+  padding: 4rem;
+  color: white;
+}
+.wrapper-experience {
+  padding: 4rem;
+  color: white;
+}
+.particles {
+  height: 100vh;
+  display:block;
+  background: rgb(33,36,50);
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.text-center {
+  text-align: center;
+  display: inline-block;
+}
+.text-header {
+  font: 90px/1.1em 'opensans-bold', sans-serif;
+  color: #fff;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, .8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+p.summary {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, .8);
+  color: white;
+}
+.text-highlight {
+  color: #4d94ff;
+}
+.links {
+  margin-top: 10px;
+  width: 40%;
+}
+a.link {
+  padding: 5px 10px 5px 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: #4d94ff;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.79);
+}
+a.link:hover {
+  color: #4d94ff;
+  background: rgb(33,36,50);
+  border: 1px solid black;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0.9;
+  visibility: hidden;
+}
+.menu ul {
+  text-decoration: none;
+}
+.menu li {
+  list-style-type: none;
+}
+.menu.open {
+  z-index: 2;
+  visibility: visible;
+}
+.menu-square {
+  height: 50vh;
+  width: 50%;
+  background-color: #4d94ff;
+  transition: all 1s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-1 {
+  float: left;
+  transform: translate3d(-100%, -100%, 0);
+}
+.menu-2 {
+  float: right;
+  transform: translate3d(100%, -100%, 0);
+}
+.menu-3 {
+  float: left;
+  transform: translate3d(-100%, 100%, 0);
+}
+.menu-4 {
+  float: right;
+  transform: translate3d(100%, 100%, 0);
+}
+.menu-square.open {
+  transform: translate3d(0, 0, 0);
+}
+.menu-square a {
+  color: black;
+}
+.menu-square.selected {
+  background-color: red;
+}
+.menu-btn {
+  position: absolute;
+  background: transparent;
+  border: none;
+  padding: 0;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all .75s ease-out;
+}
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+.menu-btn:hover {
+  opacity: 60%;
+}
+.menu-btn:focus {
+  outline: none;
+}
+.menu-btn .btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #fff;
+  z-index: 3;
+  transition: all .75s ease-out;
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  opacity: 100%;
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+  opacity: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .text-header {
+    margin: auto;
+    font-size: calc(30px + 2vmin);
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
