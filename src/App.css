@@ -110,10 +110,14 @@ a.link:hover {
   height: 50vh;
   width: 50%;
   background-color: #4d94ff;
-  transition: all 1s ease-out;
+  border: 1px solid white;
+  transition: all .75s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.menu-square:hover {
+  background-color: aquamarine;
 }
 .menu-1 {
   float: left;

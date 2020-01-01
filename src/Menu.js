@@ -23,7 +23,7 @@ class Menu extends Component {
   render() {
     return (
       <nav className={'menu' + this.state.openClass}>
-          <div className={'menu-square menu-1' + this.getSquareClass("/")}>
+          {/* <div className={'menu-square menu-1' + this.getSquareClass("/")}>
             <NavLink to="/" exact onClick={this.props.click} activeClassName="selected">Home</NavLink>
           </div>
           <div className={'menu-square menu-2' + this.getSquareClass("/about") }>
@@ -34,7 +34,27 @@ class Menu extends Component {
           </div>
           <div className={'menu-square menu-4'+ this.getSquareClass("/experience")}>
             <NavLink to="/experience" onClick={this.props.click} activeClassName="selected">Experience</NavLink>
-          </div>
+          </div> */}
+          <NavLink to="/" exact onClick={this.props.click} activeClassName="selected">
+            <div className={'menu-square menu-1' + this.getSquareClass("/")}>
+              Home
+            </div>
+          </NavLink>
+          <NavLink to="/about" onClick={this.props.click} activeClassName="selected">
+            <div className={'menu-square menu-2' + this.getSquareClass("/about") }>
+              About Me
+            </div>
+          </NavLink>
+          <NavLink to="/education" onClick={this.props.click} activeClassName="selected">
+            <div className={'menu-square menu-3' + this.getSquareClass("/education")}>
+              Education
+            </div>
+          </NavLink>
+          <NavLink to="/experience" onClick={this.props.click} activeClassName="selected">
+            <div className={'menu-square menu-4'+ this.getSquareClass("/experience")}>
+              Experience
+            </div>
+          </NavLink>
       </nav>
     );
   }
