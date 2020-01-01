@@ -70,8 +70,13 @@ p.summary {
   color: #4d94ff;
 }
 .links {
-  margin-top: 10px;
-  width: 40%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.links-item {
+  margin: 7.5px;
+  display: inline-block;
 }
 a.link {
   padding: 5px 10px 5px 10px;
@@ -109,30 +114,43 @@ a.link:hover {
 .menu-square {
   height: 50vh;
   width: 50%;
-  background-color: #4d94ff;
-  border: 1px solid white;
+  background-color: #131938;
+  border-style: solid;
+  border-color: white;
+  font-size: calc(25px + 2vmin);
+  color: #fff;
   transition: all .75s ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.menu-text {
+  display: block;
+  margin-left: 2px;
+  letter-spacing: -2px;
+  word-break: break-all;
+}
 .menu-square:hover {
-  background-color: aquamarine;
+  filter: brightness(150%);
 }
 .menu-1 {
   float: left;
+  border-width: 0px 1px 1px 0px;
   transform: translate3d(-100%, -100%, 0);
 }
 .menu-2 {
   float: right;
+  border-width: 0px 0px 1px 1px;
   transform: translate3d(100%, -100%, 0);
 }
 .menu-3 {
   float: left;
+  border-width: 1px 1px 0px 0px;
   transform: translate3d(-100%, 100%, 0);
 }
 .menu-4 {
   float: right;
+  border-width: 1px 0px 0px 1px;
   transform: translate3d(100%, 100%, 0);
 }
 .menu-square.open {
@@ -142,7 +160,10 @@ a.link:hover {
   color: black;
 }
 .menu-square.selected {
-  background-color: red;
+  background-color: #3c75c9;
+}
+.menu-square.selected:hover {
+  filter: brightness(150%);
 }
 .menu-btn {
   position: absolute;
@@ -191,11 +212,13 @@ a.link:hover {
     margin: auto;
     font-size: calc(30px + 2vmin);
   }
+  .menu-text {
+    display: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

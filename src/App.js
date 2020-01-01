@@ -6,7 +6,7 @@ import {
   Route
 } from "react-router-dom";
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faEnvelope, faCheckSquare, faFile} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faCheckSquare, faFile, faHome, faBriefcase, faUser, faUniversity} from '@fortawesome/free-solid-svg-icons';
 import { fab} from '@fortawesome/free-brands-svg-icons';
 import Home from './Home';
 import About from './About';
@@ -14,7 +14,7 @@ import Education from './Education';
 import Experience from './Experience';
 import MenuButton from './MenuButton';
 import Menu from './Menu';
-library.add(faEnvelope, faCheckSquare, fab, faFile);
+library.add(faEnvelope, faCheckSquare, fab, faFile, faHome, faUser, faUniversity, faBriefcase);
 
 class App extends Component {
   state = {

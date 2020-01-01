@@ -3,6 +3,7 @@ import {
   NavLink,
 } from "react-router-dom";
 import { withRouter } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Menu extends Component {
   constructor (props) {
@@ -37,22 +38,34 @@ class Menu extends Component {
           </div> */}
           <NavLink to="/" exact onClick={this.props.click} activeClassName="selected">
             <div className={'menu-square menu-1' + this.getSquareClass("/")}>
-              Home
+              <FontAwesomeIcon icon="home"/>
+              <div className="menu-text">
+                Home
+              </div>
             </div>
           </NavLink>
           <NavLink to="/about" onClick={this.props.click} activeClassName="selected">
             <div className={'menu-square menu-2' + this.getSquareClass("/about") }>
-              About Me
+              <FontAwesomeIcon icon="user"/>
+              <div className="menu-text">
+                About Me
+              </div>
             </div>
           </NavLink>
           <NavLink to="/education" onClick={this.props.click} activeClassName="selected">
             <div className={'menu-square menu-3' + this.getSquareClass("/education")}>
-              Education
+              <FontAwesomeIcon icon="university"/>
+              <div className="menu-text">
+                Education
+              </div>
             </div>
           </NavLink>
           <NavLink to="/experience" onClick={this.props.click} activeClassName="selected">
             <div className={'menu-square menu-4'+ this.getSquareClass("/experience")}>
-              Experience
+              <FontAwesomeIcon icon="briefcase"/>
+              <div className="menu-text">
+                Experience
+              </div>
             </div>
           </NavLink>
       </nav>

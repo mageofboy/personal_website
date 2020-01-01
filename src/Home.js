@@ -20,9 +20,8 @@ class Home extends Component {
             studying <span className="text-highlight">Computer Science</span> and
             <span className="text-highlight"> Data Science</span>.</p>
           </Row>
-          <div className="links text-center">
-          <Row>
-            <Col>
+          <Row className="text-center">
+            {/* <Col>
               <a className="link" href="https://linkedin.com/in/eric-leong"><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></a>
             </Col>
             <Col>
@@ -33,9 +32,18 @@ class Home extends Component {
             </Col>
             <Col>  
               <a className="link" href="lol.com"><FontAwesomeIcon icon="file"/></a>
-            </Col>
+            </Col> */}
+            <ul className="links">
+              <li className="links-item"><a className="link" href="https://linkedin.com/in/eric-leong"><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></a></li>
+              <li className="links-item"><a className="link" href="https://github.com/mageofboy"><FontAwesomeIcon icon={['fab', 'github']} /></a></li>
+              <li className="links-item"><a className="link" href="mailto:leong.eric17@berkeley.edu"><FontAwesomeIcon icon="envelope"/></a></li>
+              <li className="links-item"><a className="link" href="lol.com"><FontAwesomeIcon icon="file"/></a></li>
+            </ul>
+              {/* <a className="link" href="https://linkedin.com/in/eric-leong"><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></a>
+              <a className="link" href="https://github.com/mageofboy"><FontAwesomeIcon icon={['fab', 'github']} /></a>
+              <a className="link" href="mailto:leong.eric17@berkeley.edu"><FontAwesomeIcon icon="envelope"/></a>
+              <a className="link" href="lol.com"><FontAwesomeIcon icon="file"/></a> */}
           </Row>
-          </div>
         </Container>
         </div>
       </div>
