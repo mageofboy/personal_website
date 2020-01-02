@@ -10,10 +10,11 @@ import { faEnvelope, faCheckSquare, faFile, faHome, faBriefcase, faUser, faUnive
 import { fab} from '@fortawesome/free-brands-svg-icons';
 import Home from './Home';
 import About from './About';
-import Education from './Education';
+import Academics from './Academics';
 import Experience from './Experience';
 import MenuButton from './MenuButton';
 import Menu from './Menu';
+import Footer from './Footer';
 library.add(faEnvelope, faCheckSquare, fab, faFile, faHome, faUser, faUniversity, faBriefcase);
 
 class App extends Component {
@@ -35,12 +36,15 @@ class App extends Component {
             <Switch>
               <Route path="/about">
                 <About />
+                <Footer/>
               </Route>
-              <Route path="/education">
-                <Education />
+              <Route path="/academics">
+                <Academics />
+                <Footer/>
               </Route>
               <Route path="/experience">
                 <Experience/>
+                <Footer/>
               </Route>
               <Route path="/">
                 <Home />
