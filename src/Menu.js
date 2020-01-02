@@ -19,12 +19,16 @@ class Menu extends Component {
     return this.state.openClass + this.getNavLinkClass(path);
   }
   componentWillReceiveProps(nextProps) {
-    this.setState({openClass: nextProps.show ? ' open': ''})
+    this.setState({openClass: nextProps.show ? ' open': ''});
   }
+  menuSquareClickHandler = () => {
+    window.scrollTo(0, 0);
+    this.props.click();
+  };
   render() {
     return (
       <nav className={'menu' + this.state.openClass}>
-          <NavLink to="/" exact onClick={this.props.click} activeClassName="selected">
+          <NavLink to="/" exact onClick={this.menuSquareClickHandler} activeClassName="selected">
             <div className={'menu-square menu-1' + this.getSquareClass("/")}>
               <FontAwesomeIcon icon="home"/>
               <div className="menu-text">
@@ -32,7 +36,7 @@ class Menu extends Component {
               </div>
             </div>
           </NavLink>
-          <NavLink to="/about" onClick={this.props.click} activeClassName="selected">
+          <NavLink to="/about" onClick={this.menuSquareClickHandler} activeClassName="selected">
             <div className={'menu-square menu-2' + this.getSquareClass("/about") }>
               <FontAwesomeIcon icon="user"/>
               <div className="menu-text">
@@ -40,7 +44,7 @@ class Menu extends Component {
               </div>
             </div>
           </NavLink>
-          <NavLink to="/academics" onClick={this.props.click} activeClassName="selected">
+          <NavLink to="/academics" onClick={this.menuSquareClickHandler} activeClassName="selected">
             <div className={'menu-square menu-3' + this.getSquareClass("/academics")}>
               <FontAwesomeIcon icon="university"/>
               <div className="menu-text">
@@ -48,7 +52,7 @@ class Menu extends Component {
               </div>
             </div>
           </NavLink>
-          <NavLink to="/experience" onClick={this.props.click} activeClassName="selected">
+          <NavLink to="/experience" onClick={this.menuSquareClickHandler} activeClassName="selected">
             <div className={'menu-square menu-4'+ this.getSquareClass("/experience")}>
               <FontAwesomeIcon icon="briefcase"/>
               <div className="menu-text">

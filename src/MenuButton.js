@@ -7,9 +7,9 @@ const drawerToggleButton = props => {
     }
     return (
     <button className={drawerClasses} onClick={props.click}>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
     </button>
     )
 };
