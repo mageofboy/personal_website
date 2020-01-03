@@ -31,8 +31,9 @@
   color: white;
 }
 .wrapper-about {
-  padding: 4rem;
+  padding: 0;
   color: white;
+  width: 100%;
 }
 .about-bio {
   background-color: #235CB0;
@@ -40,7 +41,7 @@
   border-radius: 3px;
 }
 .about-etc {
-  margin-top: 2rem;
+  margin-top: 1rem;
   opacity: .8;
   font-size: calc(4px + 2vmin);
   padding: 5px;
@@ -52,12 +53,49 @@
   border-radius: 2px;
   border-bottom: #235CB0 7px solid;
 }
-.wrapper-academics {
-  padding: 4rem;
-  color: white;
+
+.wrapper-education {
+  padding: 0;
+  width: 100%;
+}
+.education-content {
+  background-color: #131938;
+  opacity: .9;
+  border-radius: 2px;
+  color: black;
+  padding: 1rem;
+  font: 24px/32px 'librebaskerville-italic', serif;
+}
+.education-row {
+  margin: 2px;
+  margin-top: 5px;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: white;
+}
+.berkeley-logo {
+
+}
+.education-grad {
+
+}
+.course {
+  clear: both;
+}
+.leftalign {
+  float:left;
+}
+.rightalign {
+  float: right;
+}
+.italic {
+  font-style: italic;
+}
+.center-text {
+  text-align: center;
 }
 .wrapper-experience {
-  padding: 4rem;
+  padding: 0;
   color: white;
 }
 footer {
@@ -99,7 +137,15 @@ footer {
   margin: 0 auto 18px auto;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, .8);
 }
-
+img {
+  border-radius: 3px;
+}
+.profpic {
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  width: auto;
+}
 p.summary {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, .8);
   color: white;
@@ -248,10 +294,6 @@ a.link:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .text-header {
-    margin: auto;
-    font-size: calc(30px + 2vmin);
-  }
   .menu-text {
     display: none;
   }
@@ -266,9 +308,55 @@ a.link:hover {
     display: none;
   }
 }
+@media only screen and (max-width: 767px) {
+  .mobile {
+    display: none;
+  }
+  .rightalign {
+    float: none;
+    clear: both;
+  }
+  .coursework {
+    width: 100%;
+    padding-inline-start: 20px;
+    align-content: center;
+  }
+  .about-bio {
+    margin-top: 1rem;
+  }
+  .text-header {
+    margin: auto;
+    font-size: calc(30px + 2vmin);
+  }
+  .course {
+    list-style-type: none;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .about-bio {
+    margin-top: 0px;
+  }
+  .wrapper-education {
+    padding: 4rem;
+    width: 90%;
+  }
+  .wrapper-about {
+    padding: 4rem;
+  }
+  .wrapper-experience {
+    padding: 4rem;
+  }
+  .rightalign {
+    float: right;
+  }
+  .coursework {
+    width: 90%;
+  }
+  .course {
+    list-style-type: square;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

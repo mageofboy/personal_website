@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Banner from './Banner';
 
+
 class About extends Component {
   render() {
     return (
@@ -13,10 +14,12 @@ class About extends Component {
         <h1 className="text-header text-highlight">About Me</h1>
         <Container>
           <Row>
-            <Col>
-            picture
+            <Col xs={12} md={3}>
+            <div className="profpic">
+              <img height="100%" width="100%" alt="profile picture" src={require('./portrait1.jpg')} />
+            </div>
             </Col>
-            <Col md={8} className="about-bio">
+            <Col  xs={12} md={9} className="about-bio">
               <p>
               Hi, I'm Eric! I'm a third year Computer Science student at UC Berkeley. I actually came into Berkeley intending to study Biology and pursue the pre-med route for medical school. However, out of interest, I decided to take a Computer Science class and I enjoyed the class so much that decided to study Computer Science instead. What I particularly love about Computer Science is how applicable the concepts are in other fields, especially in today's technology centered society. Some of my fields of interest are Computational Biology, Data Science & Machine Learning, and Web Development but I am generally interested in all that Computer Science has to offer.
               </p>

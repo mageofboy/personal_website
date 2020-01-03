@@ -44,11 +44,11 @@ class Menu extends Component {
               </div>
             </div>
           </NavLink>
-          <NavLink to="/academics" onClick={this.menuSquareClickHandler} activeClassName="selected">
-            <div className={'menu-square menu-3' + this.getSquareClass("/academics")}>
+          <NavLink to="/education" onClick={this.menuSquareClickHandler} activeClassName="selected">
+            <div className={'menu-square menu-3' + this.getSquareClass("/education")}>
               <FontAwesomeIcon icon="university"/>
               <div className="menu-text">
-                Academics
+                Education
               </div>
             </div>
           </NavLink>
