@@ -13,13 +13,13 @@ class Home extends Component {
         <div className="wrapper-header">
         <Container>
           <Row className="text-center">
-            <h1 className="text-header"> Hello, I'm <span className="text-highlight">Eric!</span></h1>
+            <h1 className="text-header"> Hello, I'm <span className="text-accent">Eric!</span></h1>
           </Row>
           <Row>
             <p className="summary">I am an aspiring <span className="text-highlight">Software Engineer </span>
             and third year <span className="text-highlight">Computer Science </span>
             student at <span className="text-highlight">U.C. Berkeley</span>.
-            Please check out the rest of my website or my <a className="text-highlight underline" href="resume.pdf">resume</a> to learn more about me! </p>
+            Please check out the rest of my website or my <a className="text-accent underline" href="resume.pdf">resume</a> to learn more about me! </p>
           </Row>
           <Row className="text-center">
             <ul className="links">

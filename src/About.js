@@ -11,12 +11,12 @@ class About extends Component {
     <div className="App-content">
       <Banner/>
       <div className="wrapper-about">
-        <h1 className="text-header text-highlight">About Me</h1>
+        <h1 className="text-header">About Me</h1>
         <Container>
           <Row>
             <Col xs={12} md={3}>
             <div className="profpic">
-              <img height="100%" width="100%" alt="profile picture" src={require('./portrait1.jpg')} />
+              <img height="100%" width="100%" alt="profile" src={require('./portrait1.jpg')} />
             </div>
             </Col>
             <Col  xs={12} md={9} className="about-bio">
