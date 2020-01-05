@@ -1,12 +1,19 @@
 [
     {
-        "company":"Slack",
+        "company":"",
         "title": "Incoming Software Engineering Intern",
         "period":"May 2020 - August 2020",
         "type":"industry",
         "summary": "TBD",
-        "src":"",
+        "src":"./res/slack_logo.jpg",
         "link":""
+    },
+    {
+        "title": "Personal Website",
+        "period": "December 2019 - January 2020",
+        "type": "project",
+        "summary": "I design and developed this website mostly from scratch (with a little bootstrap), using HTML/CSS, Javascript, React, Node.js.",
+        "link":"https://github.com/mageofboy/personal_website"
     },
     {
         "company":"Williams Lab",
@@ -18,27 +25,28 @@
     },
     {
         "company":"U.C. Berkeley IEEE Branch",
-        "title":"Web Committee Director",
+        "title":"Web Committee Co-Director",
         "period":"January 2018 - December 2020",
         "type":"project",
         "summary":"I lead the website committee of the Berkeley branch of IEEE. As a committee, we update and develop features for our organization's website.",
-        "src":""
+        "src":"",
+        "link":"https://ieee.berkeley.edu/"
     },
     {
-        "company":"Norton",
+        "company":"",
         "title": "Software Engineering Intern",
         "period":"May 2019 - August 2019",
         "type":"industry",
         "summary": "I built an automated performance testing pipeline on the Mobile Security Team that uses sampled data for analysis to provide easily interpretable statistics and alerts incase of performance differences between product releases.",
-        "src":""
+        "src":"./res/norton_logo.png"
     },
     {
-        "company":"CatalistX",
+        "company":"",
         "title": "Software Engineering Intern",
         "period":"November 2018 - February 2019",
         "type":"industry",
         "summary": "I work with the lead developer on creating features on our product, a website that establishes a connection between growing start ups and college students interested in working at start ups.",
-        "src":""
+        "src":"./res/catalistx_logo.png"
     },
     {
         "company": "ULAB",

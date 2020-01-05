@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
 
 class Card extends Component {
   constructor(props) {
@@ -8,21 +9,35 @@ class Card extends Component {
     };
   }
   flipHandler = () => {
-    console.log(this.state.active);
     this.setState({
       active: !this.state.active
     });
-  }
+  };
+  nestedLinkHandler = e => {
+    e.stopPropagation();
+  };
   render() {
     const image =
       this.props.state["src"] == null ||
       this.props.state["src"] === "" ? null : (
-        <img src={this.props.state["src"]} alt="logo" />
+        <img
+          src={require(this.props.state["src"] + "")}
+          height="125px"
+          alt="logo"
+        />
       );
     const link =
       this.props.state["link"] == null ||
       this.props.state["link"] === "" ? null : (
-        <img src={this.props.state["src"]} alt="logo" />
+        <Button
+          onClick={this.nestedLinkHandler}
+          href={this.props.state["link"]}
+          target="_blank"
+          rel="noopener noreferrer"
+          variant="link"
+        >
+          Link
+        </Button>
       );
     const activeClass = this.state.active ? " active" : "";
     return (
@@ -32,8 +47,8 @@ class Card extends Component {
             <div className="card-label">{this.props.state["type"]}</div>
             {image}
             <h2>{this.props.state["company"]}</h2>
-            <p>{this.props.state["title"]}</p>
-            <p>{this.props.state["period"]}</p>
+            <p className="card-text-front">{this.props.state["title"]}</p>
+            <p className="card-text-front">{this.props.state["period"]}</p>
           </div>
           <div className={"flip-card-back " + this.props.state["type"]}>
             <p>{this.props.state["summary"]}</p>

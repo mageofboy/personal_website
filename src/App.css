@@ -116,7 +116,10 @@
   transition: transform 1s;
   transform-style: preserve-3d;
 }
-
+.card-text-front {
+  font-size: 1.25rem;
+  font-style: italic;
+}
 /* Do an horizontal flip when you move the mouse over the flip box container */
 /* .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
@@ -141,14 +144,17 @@
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: var(--base);
+  transition-duration: 1s;
 }
-
+.flip-card-front:hover {
+  background-color: var(--secondary2);
+}
 /* Style the back side */
 .flip-card-back {
   background-color: white;
   color: black;
   transform: rotateY(180deg);
-  padding: .5rem;
+  padding: 0.5rem;
 }
 .card-label {
   position: absolute;
@@ -229,17 +235,24 @@ p.summary {
   margin: 7.5px;
   display: inline-block;
 }
-a.link {
-  padding: 5px 10px 5px 10px;
-  border-radius: 50%;
+span.link {
+  display: inline-block;
+  padding: 0;
+  font-size: 1.2rem;
+  line-height: 45px;
+  color: #fff;
+  background-color: var(--base);
+  border-radius: 45px;
+  position: relative;
+  height: 45px;
+  width: 45px;
   border: 1px solid white;
-  background: var(--base);
-  text-decoration: none;
-  color: white;
   transition: 0.3s;
-  /* box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.8), 0 6px 15px 0 rgba(0, 0, 0, 0.79); */
 }
-a.link:hover {
+a.link {
+  text-decoration: none;
+}
+span.link:hover {
   color: var(--secondary2);
   background: var(--secondary1);
   border: 1px solid var(--secondary1);
@@ -361,9 +374,14 @@ a.link:hover {
 .switch-button {
   position: relative;
   display: inline-block;
-  width: 60px;
+  width: 105px;
   height: 34px;
   margin-right: 1rem;
+}
+.switch-button input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 .slider {
   position: absolute;
@@ -376,6 +394,10 @@ a.link:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 34px;
+}
+.label {
+  font-size: 0.75rem;
+  margin-top: 7px;
 }
 .slider:before {
   position: absolute;
@@ -394,13 +416,13 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--accent);
+  box-shadow: 0 0 5px var(--accent);
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(71px);
+  -ms-transform: translateX(71px);
+  transform: translateX(71px);
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -493,4 +515,22 @@ input:checked + .slider:before {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+.badge {
+  display: inline-block;
+
+  padding: 0;
+  font-size: 12px;
+  font-weight: lighter !important;
+  line-height: 50px;
+  color: #fff !important;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #d73d33;
+  border-radius: 50px;
+  position: relative;
+  top: -3px;
+  height: 50px;
+  width: 50px;
 }

@@ -61,17 +61,22 @@ class Experience extends Component {
               type="checkbox"
               value={this.state.value}
               onChange={this.handleChange}
-              className="experience-filter"
+              bsPrefix="experience-filter"
             >
               <ToggleButton bsPrefix="switch-button" value={"industry"}>
-                {" "}
-                <span className="slider"></span>
+                <span className="slider">
+                  <p className="label">industry</p>
+                </span>
               </ToggleButton>
               <ToggleButton bsPrefix="switch-button" value={"research"}>
-                <span className="slider"></span>
+                <span className="slider">
+                  <p className="label">research</p>
+                </span>
               </ToggleButton>
               <ToggleButton bsPrefix="switch-button" value={"project"}>
-                <span className="slider"></span>
+                <span className="slider">
+                  <p className="label">project</p>
+                </span>
               </ToggleButton>
             </ToggleButtonGroup>
             <Row className="justify-content-center">{experience_cards}</Row>

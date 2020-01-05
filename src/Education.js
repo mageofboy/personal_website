@@ -47,7 +47,7 @@ class Education extends Component {
                   width="100%"
                   alt="Berkeley Logo"
                   className="berkeley-logo"
-                  src={require("./uc-berkeley-logo-seal.jpg")}
+                  src={require("./res/uc-berkeley-logo-seal.jpg")}
                 />
               </Col>
               <Col xs={12} md={9} className="education-grad align-self-center">
