@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
 class Card extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const image =
       this.props.state["src"] == null ||
@@ -19,6 +16,7 @@ class Card extends Component {
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className={"flip-card-front " + this.props.state["type"]}>
+            <div className="card-label">{this.props.state["type"]}</div>
             {image}
             <h2>{this.props.state["company"]}</h2>
             <p>{this.props.state["title"]}</p>
@@ -26,6 +24,7 @@ class Card extends Component {
           </div>
           <div className={"flip-card-back " + this.props.state["type"]}>
             <p>{this.props.state["summary"]}</p>
+            {link}
           </div>
         </div>
       </div>
