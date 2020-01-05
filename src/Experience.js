@@ -33,12 +33,6 @@ class Experience extends Component {
       filtered: this.props.items
     });
   }
-
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      filtered: nextProps.items
-    });
-  }
   handleChange = val => {
     let currentList = [];
     let newList = [];
@@ -71,13 +65,13 @@ class Experience extends Component {
             >
               <ToggleButton bsPrefix="switch-button" value={"industry"}>
                 {" "}
-                <span class="slider"></span>
+                <span className="slider"></span>
               </ToggleButton>
               <ToggleButton bsPrefix="switch-button" value={"research"}>
-                <span class="slider"></span>
+                <span className="slider"></span>
               </ToggleButton>
               <ToggleButton bsPrefix="switch-button" value={"project"}>
-                <span class="slider"></span>
+                <span className="slider"></span>
               </ToggleButton>
             </ToggleButtonGroup>
             <Row className="justify-content-center">{experience_cards}</Row>

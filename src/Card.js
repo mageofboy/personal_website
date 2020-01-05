@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 
 class Card extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
+  }
+  flipHandler = () => {
+    console.log(this.state.active);
+    this.setState({
+      active: !this.state.active
+    });
+  }
   render() {
     const image =
       this.props.state["src"] == null ||
@@ -12,8 +24,9 @@ class Card extends Component {
       this.props.state["link"] === "" ? null : (
         <img src={this.props.state["src"]} alt="logo" />
       );
+    const activeClass = this.state.active ? " active" : "";
     return (
-      <div className="flip-card">
+      <div className={"flip-card" + activeClass} onClick={this.flipHandler}>
         <div className="flip-card-inner">
           <div className={"flip-card-front " + this.props.state["type"]}>
             <div className="card-label">{this.props.state["type"]}</div>

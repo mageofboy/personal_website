@@ -103,7 +103,8 @@
   font-size: 1.25rem;
   margin: 1rem;
   perspective: 5000px; /* Remove this if you don't want the 3D effect */
-  border: 1px dotted white;
+  border: 1px solid white;
+  cursor: pointer;
 }
 
 /* This container is needed to position the front and back side */
@@ -117,7 +118,10 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+/* .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+} */
+.flip-card.active .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -439,6 +443,15 @@ input:checked + .slider:before {
   }
   .flip-card {
     width: 100%;
+  }
+  .menu-square {
+    transition: none;
+  }
+  .menu-btn {
+    transition: none;
+  }
+  .menu-btn .btn-line {
+    transition: none;
   }
 }
 
