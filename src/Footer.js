@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+const resume = require("./eric_leong_resume.pdf");
 
 class Footer extends Component {
   render() {
@@ -39,7 +40,7 @@ class Footer extends Component {
               <ul className="links">
                 <li className="links-item mobile">resume:</li>
                 <li className="links-item">
-                  <a className="link" href="lol.com">
+                  <a className="link" href={resume} target="_blank"  rel="noopener noreferrer">
                     <FontAwesomeIcon icon="file" />
                   </a>
                 </li>
