@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Banner from "./Banner";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const resume = require("./res/eric_leong_resume.pdf");
 
