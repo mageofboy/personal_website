@@ -25,7 +25,6 @@ class Education extends Component {
       ["CS 161: Computer Security", "In Progress"],
       ["STAT 140: Probability for Data Science", "In Progress"]
     ];
-    console.log(classes);
     var courseWork = classes.map(function(class_descript, i) {
       return (
         <li key={i} className="course">

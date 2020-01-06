@@ -5,7 +5,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faEnvelope,
   faCheckSquare,
-  faFile,
+  faFilePdf,
   faHome,
   faBriefcase,
   faUser,
@@ -23,7 +23,7 @@ library.add(
   faEnvelope,
   faCheckSquare,
   fab,
-  faFile,
+  faFilePdf,
   faHome,
   faUser,
   faUniversity,

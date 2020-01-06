@@ -66,7 +66,7 @@ class Home extends Component {
                     rel="noopener noreferrer"
                   >
                     <span className="link">
-                      <FontAwesomeIcon icon="file" />
+                      <FontAwesomeIcon icon="file-pdf" />
                     </span>
                   </a>
                 </li>

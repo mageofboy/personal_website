@@ -7,7 +7,7 @@ import ToggleButton from "react-bootstrap/ToggleButton";
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
 const experience_list = require("./experience.json");
 
-class Base extends Component {
+class Experience extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,10 +16,10 @@ class Base extends Component {
   }
 
   render() {
-    return <Experience items={this.state.list} />;
+    return <List items={this.state.list} />;
   }
 }
-class Experience extends Component {
+class List extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -87,4 +87,4 @@ class Experience extends Component {
   }
 }
 
-export default Base;
+export default Experience;
