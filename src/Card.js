@@ -16,29 +16,16 @@ class Card extends Component {
   nestedLinkHandler = e => {
     e.stopPropagation();
   };
+  card_contains = (type) => {
+    return this.props.state[type] !== undefined && this.props.state[type] !== "";
+  }
   render() {
     const image =
-      this.props.state["src"] == null ||
-      this.props.state["src"] === "" ? null : (
-        <img
-          src={require(this.props.state["src"] + "")}
-          height="125px"
-          alt="logo"
-        />
-      );
+      this.card_contains("src") ? <img src={require(this.props.state["src"] + "")} height="125px" alt="logo"/> : null;
     const link =
-      this.props.state["link"] == null ||
-      this.props.state["link"] === "" ? null : (
-        <Button
-          onClick={this.nestedLinkHandler}
-          href={this.props.state["link"]}
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="link"
-        >
-          Link
-        </Button>
-      );
+      this.card_contains("link") ? <Button onClick={this.nestedLinkHandler} href={this.props.state["link"]} target="_blank" rel="noopener noreferrer" variant="link">Link</Button> : null;
+    const tools =
+    this.card_contains("tool") ? <p> <span className="font-weight-bold">Technologies Used: </span> {this.props.state["tool"]} </p>: null;
     const activeClass = this.state.active ? " active" : "";
     return (
       <div className={"flip-card" + activeClass} onClick={this.flipHandler}>
@@ -47,11 +34,12 @@ class Card extends Component {
             <div className="card-label">{this.props.state["type"]}</div>
             {image}
             <h2>{this.props.state["company"]}</h2>
-            <p className="card-text-front">{this.props.state["title"]}</p>
-            <p className="card-text-front">{this.props.state["period"]}</p>
+            <p className="card-text-front font-weight-normal">{this.props.state["title"]}</p>
+            <p className="card-text-front font-weight-light">{this.props.state["period"]}</p>
           </div>
           <div className={"flip-card-back " + this.props.state["type"]}>
             <p>{this.props.state["summary"]}</p>
+            {tools}
             {link}
           </div>
         </div>
