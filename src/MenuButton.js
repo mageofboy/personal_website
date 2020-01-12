@@ -1,7 +1,7 @@
 import React from "react";
 
 const drawerToggleButton = props => {
-  let drawerClasses = ["menu-btn"];
+  let drawerClasses = ["content-shadow menu-btn"];
   if (props.show) {
     drawerClasses = ["menu-btn close"];
   }

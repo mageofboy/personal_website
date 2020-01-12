@@ -61,7 +61,7 @@
   background-color: var(--secondary1);
   opacity: 0.9;
   border-radius: 2px;
-  color: var(--text-black);
+  color: var(--text-white);
   padding: 1rem;
   font: 24px/32px "librebaskerville-italic", serif;
 }
