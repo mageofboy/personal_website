@@ -23,15 +23,15 @@
   font-size: calc(6px + 2vmin);
 }
 .body-text {
-  color: white;
+  color: var(--text-white);
 }
 .wrapper-header {
   width: 50%;
-  color: white;
+  color: var(--text-white);
 }
 .wrapper-about {
   padding: 0;
-  color: white;
+  color: var(--text-white);
   width: 100%;
 }
 .about-bio {
@@ -61,7 +61,7 @@
   background-color: var(--base);
   opacity: 0.9;
   border-radius: 2px;
-  color: black;
+  color: var(--text-black);
   padding: 1rem;
   font: 24px/32px "librebaskerville-italic", serif;
 }
@@ -70,7 +70,7 @@
   margin-top: 5px;
   padding: 2px;
   border-radius: 2px;
-  background-color: white;
+  background-color: var(--bg-white);
 }
 .course {
   clear: both;
@@ -90,7 +90,7 @@
 .wrapper-experience {
   padding: 0;
   width: 100%;
-  color: white;
+  color: var(--text-white);
 }
 .experience-content {
   opacity: 0.95;
@@ -103,7 +103,7 @@
   font-size: 1rem;
   margin: 1rem;
   perspective: 5000px; /* Remove this if you don't want the 3D effect */
-  border: 1px solid white;
+  border: 1px solid var(--text-white);
   cursor: pointer;
 }
 
@@ -151,8 +151,8 @@
 }
 /* Style the back side */
 .flip-card-back {
-  background-color: white;
-  color: black;
+  background-color: var(--bg-white);
+  color: var(--text-black);
   transform: rotateY(180deg);
   padding: 0.5rem;
 }
@@ -166,7 +166,7 @@
 }
 footer {
   background-color: var(--bg-footer);
-  color: #ffffff;
+  color: var(--text-white);
   width: 100%;
   height: 75px;
   font-size: 0.9em;
@@ -198,7 +198,7 @@ footer {
 }
 .text-header {
   font: calc(55px + 2vmin) "opensans-bold", sans-serif;
-  color: #fff;
+  color: var(--text-white);
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
@@ -214,7 +214,7 @@ img {
 }
 p.summary {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
-  color: white;
+  color: var(--text-white);
 }
 .underline {
   text-decoration: underline;
@@ -239,13 +239,13 @@ span.link {
   padding: 0;
   font-size: 1.5rem;
   line-height: 45px;
-  color: #fff;
+  color: var(--text-white);
   background-color: var(--base);
   border-radius: 45px;
   position: relative;
   height: 45px;
   width: 45px;
-  border: 1px solid white;
+  border: 1px solid var(--text-white);
   transition: 0.3s;
 }
 a.link {
@@ -279,9 +279,9 @@ span.link:hover {
   width: 50%;
   background-color: var(--base);
   border-style: solid;
-  border-color: white;
+  border-color: var(--text-white);
   font-size: calc(25px + 2vmin);
-  color: white;
+  color: var(--text-white);
   transition: all 0.75s ease-out;
   display: flex;
   align-items: center;
@@ -320,7 +320,7 @@ span.link:hover {
   transform: translate3d(0, 0, 0);
 }
 .menu-square a {
-  color: black;
+  color: var(--text-black);
 }
 .menu-square.selected {
   background-color: var(--secondary2);
@@ -352,7 +352,7 @@ span.link:hover {
   width: 28px;
   height: 3px;
   margin: 0 0 5px 0;
-  background: #fff;
+  background: var(--text-white);
   transition: all 0.75s ease-out;
 }
 
@@ -405,7 +405,7 @@ span.link:hover {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: var(--bg-white);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%;
@@ -514,22 +514,4 @@ input:checked + .slider:before {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-}
-.badge {
-  display: inline-block;
-
-  padding: 0;
-  font-size: 12px;
-  font-weight: lighter !important;
-  line-height: 50px;
-  color: #fff !important;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  background-color: #d73d33;
-  border-radius: 50px;
-  position: relative;
-  top: -3px;
-  height: 50px;
-  width: 50px;
 }

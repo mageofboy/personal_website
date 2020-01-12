@@ -11,6 +11,9 @@ body {
   --bg-main: #1F3038;
   --bg-footer: #303538;
   --accent: #B89265;
+  --text-white: hsl(0, 0%, 100%);
+  --text-black: black;
+  --bg-white: hsl(0, 0%, 100%);
 }
 
 code {
