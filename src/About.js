@@ -23,7 +23,7 @@ class About extends Component {
                   />
                 </div>
               </Col>
-              <Col xs={12} md={9} className="about-bio">
+              <Col xs={12} md={9} className="about-bio content-shadow">
                 <p>
                   Hi, I'm Eric! I'm a third year Computer Science student at UC
                   Berkeley. I actually came into Berkeley intending to study
@@ -41,7 +41,7 @@ class About extends Component {
               </Col>
             </Row>
             <Row className="about-etc">
-              <Col md={12} lg={true} className="about-etc-col">
+              <Col md={12} lg={true} className="about-etc-col content-shadow">
                 <p>
                   I am fond of Full Stack Development as a result of prior
                   experience with Web Development. I acted as a Web Committee
@@ -53,7 +53,7 @@ class About extends Component {
                   bigger ones, such as a messenger feature.
                 </p>
               </Col>
-              <Col md={12} lg={true} className="about-etc-col">
+              <Col md={12} lg={true} className="about-etc-col content-shadow">
                 <p>
                   I developed an interest in Data Science and Analytics over the
                   summer, where I worked as a Software Engineering Intern at
@@ -67,7 +67,7 @@ class About extends Component {
                   cycle.
                 </p>
               </Col>
-              <Col md={12} lg={true} className="about-etc-col">
+              <Col md={12} lg={true} className="about-etc-col content-shadow">
                 <p>
                   Though I am now studying Computer Science, I still hold an
                   interest in Biology and am currently exploring the

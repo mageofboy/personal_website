@@ -30,14 +30,14 @@ class Card extends Component {
     return (
       <div className={"flip-card" + activeClass} onClick={this.flipHandler}>
         <div className="flip-card-inner">
-          <div className={"flip-card-front " + this.props.state["type"]}>
+          <div className={"flip-card-front content-shadow " + this.props.state["type"]}>
             <div className="card-label">{this.props.state["type"]}</div>
             {image}
             <h2>{this.props.state["company"]}</h2>
             <p className="card-text-front font-weight-normal">{this.props.state["title"]}</p>
             <p className="card-text-front font-weight-light">{this.props.state["period"]}</p>
           </div>
-          <div className={"flip-card-back " + this.props.state["type"]}>
+          <div className={"flip-card-back content-shadow " + this.props.state["type"]}>
             <p>{this.props.state["summary"]}</p>
             {tools}
             {link}

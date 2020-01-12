@@ -39,7 +39,7 @@ class Education extends Component {
         <div className="wrapper-education">
           <h1 className="text-header">Education</h1>
           <Container className="education-content">
-            <Row className="education-row">
+            <Row className="education-row content-shadow">
               <Col xs={12} md={3}>
                 <img
                   height="100%"
@@ -60,7 +60,7 @@ class Education extends Component {
                 </p>
               </Col>
             </Row>
-            <Row className="education-row justify-content-center">
+            <Row className="education-row content-shadow justify-content-center">
               <h1>Relevant Coursework</h1>
               <ul className="coursework">{courseWork}</ul>
             </Row>
