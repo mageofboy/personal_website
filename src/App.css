@@ -35,7 +35,7 @@
   width: 100%;
 }
 .about-bio {
-  background-color: var(--accent);
+  background-color: var(--secondary2);
   opacity: 0.9;
   border-radius: 3px;
 }
