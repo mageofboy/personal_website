@@ -28,7 +28,9 @@ class Home extends Component {
                 . Please check out the rest of my website or my{" "}
                 <a
                   className="text-accent underline"
-                  href="./eric_leong_resume.pdf"
+                  href={resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   resume
                 </a>{" "}

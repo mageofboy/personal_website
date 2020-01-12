@@ -13,7 +13,7 @@ class About extends Component {
           <h1 className="text-header">About Me</h1>
           <Container>
             <Row>
-              <Col xs={12} md={3}>
+              <Col xs={12} md={4}>
                 <div className="profpic">
                   <img
                     height="100%"
@@ -23,8 +23,8 @@ class About extends Component {
                   />
                 </div>
               </Col>
-              <Col xs={12} md={9} className="about-bio content-shadow">
-                <p>
+              <Col xs={12} md={8} className="about-bio content-shadow">
+                <p className="paragraph">
                   Hi, I'm Eric! I'm a third year Computer Science student at UC
                   Berkeley. I actually came into Berkeley intending to study
                   Biology and pursue the pre-med route for medical school.
@@ -42,7 +42,7 @@ class About extends Component {
             </Row>
             <Row className="about-etc">
               <Col md={12} lg={true} className="about-etc-col content-shadow">
-                <p>
+                <p className="paragraph">
                   I am fond of Full Stack Development as a result of prior
                   experience with Web Development. I acted as a Web Committee
                   Co-Director of the UC Berkeley IEEE chapter where I lead the
@@ -54,7 +54,7 @@ class About extends Component {
                 </p>
               </Col>
               <Col md={12} lg={true} className="about-etc-col content-shadow">
-                <p>
+                <p className="paragraph">
                   I developed an interest in Data Science and Analytics over the
                   summer, where I worked as a Software Engineering Intern at
                   Symantec on the Norton Mobile Solutions team. I developed an
@@ -68,7 +68,7 @@ class About extends Component {
                 </p>
               </Col>
               <Col md={12} lg={true} className="about-etc-col content-shadow">
-                <p>
+                <p className="paragraph">
                   Though I am now studying Computer Science, I still hold an
                   interest in Biology and am currently exploring the
                   intersection between Computer Science and Biology by partaking

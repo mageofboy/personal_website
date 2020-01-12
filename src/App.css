@@ -20,7 +20,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  font-size: calc(6px + 2vmin);
+  font-size: calc(8px + 2vmin);
 }
 .body-text {
   color: var(--text-white);
@@ -38,17 +38,17 @@
   background-color: var(--secondary2);
   opacity: 0.9;
   border-radius: 3px;
+  padding: 1rem;
 }
 .about-etc {
-  margin-top: 1rem;
-  opacity: 0.8;
-  font-size: calc(4px + 2vmin);
-  padding: 5px;
+  margin-top: 1.5rem;
+  opacity: 0.9;
+  font-size: calc(6px + 2vmin);
 }
 .about-etc-col {
-  opacity: 1;
   background-color: var(--base);
-  margin: 5px;
+  margin: .5rem;
+  padding: 1rem;
   border-radius: 2px;
   border-bottom: var(--secondary2) 7px solid;
 }
@@ -92,14 +92,13 @@
   color: var(--text-white);
 }
 .experience-content {
-  opacity: 0.95;
+  opacity: 0.9;
   background-color: var(--secondary1);
 }
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
   height: 400px;
-  font-size: 1rem;
   margin: 1rem;
   perspective: 5000px; /* Remove this if you don't want the 3D effect */
   cursor: pointer;
@@ -115,7 +114,7 @@
   transform-style: preserve-3d;
 }
 .card-text-front {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-style: italic;
 }
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -156,9 +155,10 @@
 /* Style the back side */
 .flip-card-back {
   background-color: var(--bg-white);
+  font-size: 1.25rem;
   color: var(--text-black);
   transform: rotateY(180deg);
-  padding: 0.5rem;
+  padding: 1.5rem;
   border: 1px solid var(--text-black);
 }
 .card-label {
@@ -166,6 +166,7 @@
   padding: 5px 10px;
   top: 10px;
   left: 10px;
+  font-size: 1.25rem;
   font-weight: bold;
   background-color: var(--accent);
 }
@@ -202,7 +203,7 @@ footer {
   display: inline-block;
 }
 .text-header {
-  font: calc(55px + 2vmin) "opensans-bold", sans-serif;
+  font-size: calc(55px + 2vmin);
   color: var(--text-white);
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
@@ -229,6 +230,9 @@ p.summary {
 }
 .text-accent {
   color: var(--accent);
+}
+a.text-accent:hover {
+  color: var(--secondary2);
 }
 .links {
   list-style-type: none;
@@ -266,7 +270,7 @@ span.link:hover {
   top: 0;
   width: 100%;
   min-height: 100vh;
-  opacity: 0.92;
+  opacity: 0.9;
   visibility: hidden;
   z-index: 5;
 }
@@ -349,12 +353,15 @@ span.link:hover {
   justify-content:center;
   align-items:center;
 }
+p.paragraph {
+  text-align: left;
+}
 .menu-btn.close {
   transform: rotate(180deg);
   background: var(--bg-main);
 }
 .menu-btn:hover {
-  opacity: 60%;
+  filter: brightness(125%);
 }
 .menu-btn:focus {
   outline: none;
@@ -371,14 +378,14 @@ span.link:hover {
 }
 .menu-btn.close .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
-  opacity: 100%;
+  opacity: 1;
 }
 .menu-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
 .menu-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -6px);
-  opacity: 100%;
+  opacity: 1;
 }
 .experience-filter {
   padding: 1rem;
@@ -441,9 +448,6 @@ input:checked + .slider:before {
   .menu-text {
     display: none;
   }
-  footer {
-    height: 10%;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -470,7 +474,7 @@ input:checked + .slider:before {
   }
   .text-header {
     margin: auto;
-    font-size: calc(30px + 2vmin);
+    font-size: calc(50px + 2vmin);
   }
   .course {
     list-style-type: none;
@@ -489,6 +493,9 @@ input:checked + .slider:before {
   }
   .menu-btn:hover {
     opacity: 100%;
+  }
+  footer {
+    height: 10%;
   }
 }
 

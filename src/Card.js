@@ -23,7 +23,7 @@ class Card extends Component {
     const image =
       this.card_contains("src") ? <img src={require(this.props.state["src"] + "")} height="125px" alt="logo"/> : null;
     const link =
-      this.card_contains("link") ? <Button onClick={this.nestedLinkHandler} href={this.props.state["link"]} target="_blank" rel="noopener noreferrer" variant="link">Link</Button> : null;
+      this.card_contains("link") ? <Button onClick={this.nestedLinkHandler} href={this.props.state["link"]} target="_blank" rel="noopener noreferrer" variant="link">Project Link</Button> : null;
     const tools =
     this.card_contains("tool") ? <p> <span className="font-weight-bold">Technologies Used: </span> {this.props.state["tool"]} </p>: null;
     const activeClass = this.state.active ? " active" : "";
@@ -38,7 +38,7 @@ class Card extends Component {
             <p className="card-text-front font-weight-light">{this.props.state["period"]}</p>
           </div>
           <div className={"flip-card-back content-shadow " + this.props.state["type"]}>
-            <p>{this.props.state["summary"]}</p>
+            <p className="paragraph">{this.props.state["summary"]}</p>
             {tools}
             {link}
           </div>
