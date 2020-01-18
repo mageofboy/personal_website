@@ -7,6 +7,8 @@ class Card extends Component {
     this.state = {
       active: false
     };
+    this.flipHandler = this.flipHandler.bind(this);
+    this.nestedLinkHandler = this.nestedLinkHandler.bind(this);
   }
   flipHandler = () => {
     this.setState({

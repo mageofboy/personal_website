@@ -9,6 +9,7 @@ class Menu extends Component {
     this.state = {
       openClass: this.props.show ? " open" : ""
     };
+    this.menuSquareClickHandler = this.menuSquareClickHandler.bind(this);
   }
   getNavLinkClass = path => {
     return this.props.location.pathname === path ? " selected" : "";
