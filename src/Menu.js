@@ -17,9 +17,22 @@ class Menu extends Component {
   getSquareClass = path => {
     return this.state.openClass + this.getNavLinkClass(path);
   };
-  componentWillReceiveProps(nextProps) {
-    this.setState({ openClass: nextProps.show ? " open" : "" });
+  static getDerivedStateFromProps(props, state) {
+    if (
+      props.show
+    ) {
+      return {
+        openClass: " open"
+      };
+    } else {
+      return {
+        openClass: ""
+      }
+    }
   }
+  // componentWillReceiveProps(nextProps) {
+  //   this.setState({ openClass: nextProps.show ? " open" : "" });
+  // }
   menuSquareClickHandler = () => {
     window.scrollTo(0, 0);
     this.props.click();
