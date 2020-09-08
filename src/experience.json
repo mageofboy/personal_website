@@ -7,7 +7,7 @@
         "summary": "I am working on the Pylot project, an autonomous vehicle platform, using computer vision techniques to improve lane detection. ",
         "src":"./res/riselab.jpg",
         "link":"",
-        "tool":"React, Redux, HTML/CSS, Javascript, SQL, Hack"
+        "tool":"Python, TensorFlow, Carla"
     },
     {
         "company":"",
