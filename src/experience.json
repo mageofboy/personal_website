@@ -1,12 +1,23 @@
 [
     {
         "company":"",
-        "title": "Incoming Software Engineering Intern",
+        "title": "Undergraduate Researcher",
+        "period":"Aug. 2020 - Present",
+        "type":"industry",
+        "summary": "I am working on the Pylot project, an autonomous vehicle platform, using computer vision techniques to improve lane detection. ",
+        "src":"./res/riselab.jpg",
+        "link":"",
+        "tool":"React, Redux, HTML/CSS, Javascript, SQL, Hack"
+    },
+    {
+        "company":"",
+        "title": "Software Engineering Intern",
         "period":"May 2020 - Aug. 2020",
         "type":"industry",
-        "summary": "TBD",
+        "summary": "I worked on the front-end in the Files team, enhancing content sharing experience on Slack and ",
         "src":"./res/slack_logo.jpg",
-        "link":""
+        "link":"",
+        "tool":"React, Redux, HTML/CSS, Javascript, SQL, Hack"
     },
     {
         "title": "Personal Website",
