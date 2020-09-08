@@ -3,7 +3,7 @@
         "company":"",
         "title": "Undergraduate Researcher",
         "period":"Aug. 2020 - Present",
-        "type":"industry",
+        "type":"research",
         "summary": "I am working on the Pylot project, an autonomous vehicle platform, using computer vision techniques to improve lane detection. ",
         "src":"./res/riselab.jpg",
         "link":"",
