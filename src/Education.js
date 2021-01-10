@@ -24,9 +24,12 @@ class Education extends Component {
       ["CS 189: Machine Learning", "Spring 2020"],
       ["CS 161: Computer Security", "Spring 2020"],
       ["STAT 140: Probability for Data Science", "Spring 2020"],
-      ["CS 186", "In Progress"],
-      ["CS 194-26: Computational Photography and Computer Vision", "In Progress"],
-      ["EE 16B: Designing Information Devices and Systems II", "In Progress"]
+      ["CS 186: Database Systems", "Fall 2020"],
+      ["CS 194-26: Computational Photography and Computer Vision", "Fall 2020"],
+      ["EE 16B: Designing Information Devices and Systems II", "Fall 2020"],
+      ["Info 159: Natural Language Processing", "Spring 2021"],
+      ["CS 182: Deep Learning", "Spring 2021"],
+      ["CS 280: Computer Vision (Graduate class)", "Spring 2021"]
     ];
     var courseWork = classes.map(function(class_descript, i) {
       return (
@@ -57,9 +60,9 @@ class Education extends Component {
                 <p>
                   Expected Graduation: <span className="italic">May 2021</span>
                   <br />
-                  B.A. in <span className="italic">Computer Science</span>
+                  B.A. in <span className="italic">Computer Science and Data Science</span>
                   <br />
-                  GPA: <span className="italic">3.893</span>
+                  GPA: <span className="italic">3.91</span>
                 </p>
               </Col>
             </Row>
