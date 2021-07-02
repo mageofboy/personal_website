@@ -1,13 +1,23 @@
 [
     {
         "company":"",
+        "title": "Software Engineering Intern",
+        "period":"June 2021 - Aug. 2021",
+        "type":"industry",
+        "summary": "I worked on adding image editing to Slack.",
+        "src":"./res/slack_logo.jpg",
+        "link":"",
+        "tool":"React, Redux, HTML/CSS, Typescript, Javascript, SQL, Hack"
+    },
+    {
+        "company":"",
         "title": "Undergraduate Researcher",
         "period":"Aug. 2020 - Present",
         "type":"research",
         "summary": "I am working on the Pylot project, an autonomous vehicle platform, using computer vision techniques to improve lane detection. ",
         "src":"./res/riselab.jpg",
         "link":"",
-        "tool":"Python, TensorFlow, Carla"
+        "tool":"Python, TensorFlow, Carla, AWS, PyTorch"
     },
     {
         "company":"",

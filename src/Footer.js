@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-const resume = require("./res/eric_leong_resume.pdf");
+const resume = require("./res/EricLeongJune2021.pdf");
 
 class Footer extends Component {
   render() {
@@ -60,7 +60,7 @@ class Footer extends Component {
               </ul>
             </Col>
             <Col className="align-self-center">
-              <div className="copyright">© 2020 Eric Leong</div>
+              <div className="copyright">© 2021 Eric Leong</div>
             </Col>
           </Row>
         </Container>

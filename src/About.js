@@ -25,18 +25,12 @@ class About extends Component {
               </Col>
               <Col xs={12} md={8} className="about-bio content-shadow">
                 <p className="paragraph">
-                  Hi, I'm Eric! I'm a third year Computer Science student at UC
-                  Berkeley. I actually came into Berkeley intending to study
-                  Biology and pursue the pre-med route for medical school.
-                  However, out of interest, I decided to take a Computer Science
-                  class and I enjoyed the class so much that decided to study
-                  Computer Science instead. What I particularly love about
-                  Computer Science is how applicable the concepts are in other
-                  fields, especially in today's technology centered society.
-                  Some of my fields of interest are Computational Biology, Data
-                  Science & Machine Learning, and Web Development but I am
-                  generally interested in all that Computer Science has to
-                  offer.
+                  Hi, I will be a EECS MS student at UC Berkeley, graduating in
+                  May 2022. I recently completed my undergrad at UC Berkeley,
+                  where I double majored in Computer Science and Data Science. I
+                  am looking for full time Software Engineering opportunities in
+                  ML, Data Science, but I am interested in any
+                  opportunity.
                 </p>
               </Col>
             </Row>
@@ -75,7 +69,9 @@ class About extends Component {
                   in Computational Biology research. In my research, I use
                   algorithms and Computational tools to work with Biological
                   Data, such as protein sequences, to establish a relationship
-                  between certain animal traits and genes.
+                  between certain animal traits and genes. I am currently doing
+                  research in autonomous driving cars, contributing to the
+                  Erdos/Pylot project.
                 </p>
               </Col>
             </Row>

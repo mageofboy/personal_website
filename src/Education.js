@@ -58,11 +58,11 @@ class Education extends Component {
               <Col xs={12} md={9} className="education-grad align-self-center">
                 <h1>University of California, Berkeley</h1>
                 <p>
-                  Expected Graduation: <span className="italic">May 2021</span>
+                  M.S. in <span className="italic">EECS, Expected May 2022</span>
                   <br />
-                  B.A. in <span className="italic">Computer Science and Data Science</span>
+                  B.A. in <span className="italic">Computer Science and Data Science, May 2021</span>
                   <br />
-                  GPA: <span className="italic">3.91</span>
+                  Undergrad GPA: <span className="italic">3.92</span>
                 </p>
               </Col>
             </Row>

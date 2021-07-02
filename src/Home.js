@@ -3,7 +3,7 @@ import Banner from "./Banner";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const resume = require("./res/eric_leong_resume.pdf");
+const resume = require("./res/EricLeongJune2021.pdf");
 
 class Home extends Component {
   render() {
@@ -20,10 +20,10 @@ class Home extends Component {
             </Row>
             <Row>
               <p className="summary">
-                I am an aspiring{" "}
+                I am a {" "}
                 <span className="text-highlight">Software Engineer </span>
-                and third year{" "}
-                <span className="text-highlight">Computer Science </span>
+                and {" "}
+                <span className="text-highlight">EECS Masters </span>
                 student at <span className="text-highlight">U.C. Berkeley</span>
                 . Please check out the rest of my website or my{" "}
                 <a
